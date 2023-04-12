@@ -16,7 +16,7 @@ class Keyboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<List<KeyboardAction>> rows = List.generate(
-      3,
+      6,
       (index) {
         return KeyboardAction.values
             .where((action) => action.rowIndex == index)
