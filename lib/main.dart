@@ -9,7 +9,16 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
-  var words = const ['WORDLE', 'STATE', 'TEXT', 'TEST', 'OTHER'];
+  var words = const [
+    'DART',
+    'STATE',
+    'DEBUG',
+    'CODE',
+    'STACK',
+    'SCOPE',
+    'ROW',
+    'CHILD'
+  ];
 
   // This widget is the root of your application.
   @override

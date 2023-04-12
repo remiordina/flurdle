@@ -4,12 +4,12 @@ import 'package:flurdle/presentation/atoms/letter_card.dart';
 import 'package:flurdle/presentation/molecules/card_row.dart';
 
 class GameCard extends StatelessWidget {
-  GameCard({
+  const GameCard({
     Key? key,
     required this.gameCard,
   }) : super(key: key);
 
-  GameCardState gameCard;
+  final GameCardState gameCard;
 
   @override
   Widget build(BuildContext context) {
