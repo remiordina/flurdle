@@ -85,11 +85,11 @@ class _GameState extends State<WorldePage> {
           if (gameCardState.isCurrentRowCorrect &&
               widget.successCallback != null) {
             widget.successCallback!(
-                gameCardState.currentRowIndex, widget.correctWord);
+                gameCardState.currentRowIndex + 1, widget.correctWord);
           } else if (!gameCardState.hasAttemptsLeft &&
               widget.failedCallback != null) {
             widget.failedCallback!(
-                gameCardState.currentRowIndex, widget.correctWord);
+                gameCardState.currentRowIndex + 1, widget.correctWord);
           }
           gameCardState = gameCardState.forNewRow();
         }
