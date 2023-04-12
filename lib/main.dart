@@ -4,12 +4,12 @@ import 'package:flurdle/presentation/pages/result_page.dart';
 import 'package:flutter/material.dart';
 import 'presentation/pages/wordle_page.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
-  var words = const [
+  final words = const [
     'DART',
     'STATE',
     'DEBUG',
